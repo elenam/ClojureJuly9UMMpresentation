@@ -16,8 +16,6 @@
 
 %% Elena's favorite green (thanks, Fernando!)
 \definecolor{ForestGreen}{RGB}{34,139,34}
-%% Joe's Color.
-\definecolor{JoesGold}{RGB}{204,102,0}
 %% Henry's Color.
 \definecolor{Teal}{RGB}{2,132,130}
 % Uncomment this if you want to show work-in-progress comments
@@ -25,7 +23,6 @@
 % Uncomment this if you don't want to show comments
 %\newcommand{\comment}[1]{}
 \newcommand{\emcomment}[1]{\textcolor{ForestGreen}{\comment{Elena: {#1}}}}
-\newcommand{\joecomment}[1]{\textcolor{JoesGold}{\comment{Joe: {#1}}}}
 \newcommand{\hfcomment}[1]{\textcolor{Teal}{\comment{Henry: {#1}}}}
 \newcommand{\todo}[1]{\textcolor{blue}{\comment{To Do: {#1}}}}
 \newcommand{\clocode}[1]{{\texttt {#1}}}
@@ -37,21 +34,103 @@
 \date{July 9, 2014}
 
 \begin{frame}
-\frametitle{}
+\frametitle{HHMI lab meeting, July 9, 2014}
+\emcomment{format better!}
+
 {\centering
 HHMI lab meeting, July 9, 2014 \par
 }
-Henry Fellows (HHMI), Aaron Lemmon (MAP), Emma Sax (HHMI)\par
-Advisor: Elena Machkasova
+Henry Fellows, Aaron Lemmon, Emma Sax\par
+(supported by HHMI and UMM MAP grants)\par
+Advisor: Elena Machkasova \par
 \end{frame}
-%frame
 
 \begin{frame}[fragile]
-\frametitle{Introduction}
-	
+\frametitle{Outline}
+	\tableofcontents
 \end{frame}
-%frame
 
 
+\section{Goals and scope of the project}
+
+\begin{frame}[fragile]
+\frametitle{Learning goals}
+\begin{itemize}
+\item Present programming as a structures activity.
+\item Develop good programming practices.
+\item Introduce successful techniques: testing, incremental development, refactoring, commenting. 
+\item Help students develop successful team-work strategies. 
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Learning goals}
+\emcomment{perhaps give an example of a "program": clear instructions, unclear instructions - for something simple? Recipe?}
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Elements of an introductory CSci class}
+\begin{itemize}
+\item A programming language. 
+\item A text editor.
+\item Tools for testing, managing program code. 
+\item Help in figuring out what went wrong.
+\item Challenging and problems that students are interested in.
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Current elements for the Clojure-based class}
+\begin{itemize}
+\item A programming language: Clojure. 
+\item A text editor: LightTable.
+\item Tools for testing, managing program code: testing library {\tt expectations}
+\item Help in figuring out what went wrong: Clojure error messages (need work!)
+\item Challenging and problems that students are interested in: graphical system (work-in-progress by Paul Schliep and Max Magnuson)
+\end{itemize}
+\emcomment{This is a lot of text, need to format, simplify; mention the starting state of the project}
+\end{frame}
+
+\section{Beginner-friendly software}
+
+\begin{frame}[fragile]
+\frametitle{What makes good code?}
+
+\begin{itemize}
+\item Good organization: files, functions, etc. Each code unit serves only one specific purpose. 
+\item Good naming.
+\item Clear specification of what the code does: comments, tests.
+\item Correctness: testing. 
+\end{itemize}
+{\it Programs should be written for people to read, and only incidentally for machines to execute} --	 
+from "Structure and Interpretation of Computer Programs" by Abelson and Sussman	
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Testing}
+		
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Refactoring}
+		
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Test, refactor, test}
+		
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{What has been accomplished so far}
+		
+\end{frame}
+
+\section{Modifying a text editor (in the text editor)}
+
+\begin{frame}[fragile]
+\frametitle{Goal: integrating our software into LightTable}
+		
+\end{frame}
 
 \end{document} 
