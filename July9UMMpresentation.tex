@@ -6,13 +6,11 @@
 \usepackage{times} %For typeface
 \usepackage{epsfig}
 \usepackage{color} %For Comments
-\usepackage[all]{xy}
 \usepackage{float}
-\usepackage{subfigure} 
 \usepackage{hyperref}
 \usepackage{url}
 \usepackage{parskip}
-\usepackage{multirow}
+
 
 %% Elena's favorite green (thanks, Fernando!)
 \definecolor{ForestGreen}{RGB}{34,139,34}
@@ -26,8 +24,6 @@
 \newcommand{\hfcomment}[1]{\textcolor{Teal}{\comment{Henry: {#1}}}}
 \newcommand{\todo}[1]{\textcolor{blue}{\comment{To Do: {#1}}}}
 \newcommand{\clocode}[1]{{\texttt {#1}}}
-\newcommand{\fast}[1]{\textcolor{green}{#1}}
-\newcommand{\slow}[1]{\textcolor{red}{#1}}
 
 \begin{document}
 \title{Writing good software for teaching how to write good software}
@@ -56,7 +52,7 @@ Advisor: Elena Machkasova \par
 \begin{frame}[fragile]
 \frametitle{Learning goals}
 \begin{itemize}
-\item Present programming as a structures activity.
+\item Present programming as a structured activity.
 \item Develop good programming practices.
 \item Introduce successful techniques: testing, incremental development, refactoring, commenting. 
 \item Help students develop successful team-work strategies. 
@@ -75,7 +71,7 @@ Advisor: Elena Machkasova \par
 \item A text editor.
 \item Tools for testing, managing program code. 
 \item Help in figuring out what went wrong.
-\item Challenging and problems that students are interested in.
+\item Challenging problems that students are interested in.
 \end{itemize}
 \end{frame}
 
@@ -86,7 +82,7 @@ Advisor: Elena Machkasova \par
 \item A text editor: LightTable.
 \item Tools for testing, managing program code: testing library {\tt expectations}
 \item Help in figuring out what went wrong: Clojure error messages (need work!)
-\item Challenging and problems that students are interested in: graphical system (work-in-progress by Paul Schliep and Max Magnuson)
+\item Challenging problems that students are interested in: graphical system (work-in-progress by Paul Schliep and Max Magnuson)
 \end{itemize}
 \emcomment{This is a lot of text, need to format, simplify; mention the starting state of the project}
 \end{frame}
