@@ -82,13 +82,8 @@ Past work:
 \begin{frame}[fragile]
 \frametitle{Learning goals}
 \emcomment{perhaps give an example of a "program": clear instructions, unclear instructions - for something simple? Recipe?}
-{\it Bad directions from Science Building to Student Center:}
-
-{Go outside. Look for the building next to the Library.}
-
-{\it Good directions from Science Building to Student Center:}
-
-{Starting from the Science Building, go outside a North exit. On the East side of the Library, between the Mall and Library, there is another one-story building. That's the Student Center!}
+{\it Programs should be written for people to read, and only incidentally for machines to execute} --	 
+from "Structure and Interpretation of Computer Programs" by Abelson and Sussman
 \end{frame}
 
 \begin{frame}[fragile]
@@ -116,51 +111,48 @@ Past work:
 
 \section{Beginner-friendly software}
 
-\begin{frame}[fragile]
-\frametitle{What makes good code?}
-
-\begin{itemize}
-\item Good organization: files, functions, etc. Each code unit serves only one specific purpose. 
-\item Good naming.
-\item Clear specification of what the code does: comments, tests.
-\item Correctness: testing. 
-\end{itemize}
-{\it Programs should be written for people to read, and only incidentally for machines to execute} --	 
-from "Structure and Interpretation of Computer Programs" by Abelson and Sussman	
-\end{frame}
+%\begin{frame}[fragile]
+%\frametitle{What makes good code?}
+%
+%\begin{itemize}
+%\item Good organization: files, functions, etc. Each code unit serves only one specific purpose. 
+%\item Good naming.
+%\item Clear specification of what the code does: comments, tests.
+%\item Correctness: testing. 
+%\end{itemize}	
+%\end{frame}
 
 \begin{frame}[fragile]
 \frametitle{Testing}
 
 \begin{itemize}
-\item to test:
-\item The purpose of testing is to make sure that your code works.
-\item Oftentimes, code is so complex that testing is the only way to make sense of it and make sure all the pieces are working correctly.
-\item Automated testing has many benefits, such as:
+\item Testing is writing what is expected from certain code and then making sure it works.
+\item Automated testing has many benefits:
 \begin{itemize}
-\item quick testing
-\item quick fixing
+\item quick testing (we run over 400 tests about every minute)
+\item test-driven-development
+\begin{itemize}
+\item writing tests before code
+\item better understand functionality of code
+\item make sure code does what we originally expected
 \end{itemize}
 \end{itemize}
-		
+\end{itemize}	
 \end{frame}
 
 \begin{frame}[fragile]
 \frametitle{Refactoring}
-
 \begin{itemize}
-\item to refactor: to change the structure of code to make it clearer or more efficient  without changing functionality
+\item Refactoring is changing the structure of code to make it clearer or more efficient  without changing functionality.
 \item Frequent refactoring can help keep code more: 
-
 \begin{itemize}
 \item readable
 \item maintainable
 \item flexible
 \item scalable
 \end{itemize}
-
-\end{itemize}
-		
+\item {\tt preobj} renamed to {\tt msg-info-obj}
+\end{itemize}	
 \end{frame}
 
 \begin{frame}[fragile]
