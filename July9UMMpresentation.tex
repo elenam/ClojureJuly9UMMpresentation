@@ -1,6 +1,7 @@
 \documentclass{beamer}
 \usetheme{Warsaw}
-\usecolortheme{dolphin}
+\usecolortheme{wolverine}
+%%wolverine is easier to see (especially on a screen) than dolphin
 
 \usepackage{graphicx} %For jpg figure inclusion
 \usepackage{times} %For typeface
@@ -57,10 +58,10 @@ Advisor: Elena Machkasova \par
 
 \begin{frame}[fragile]
 \frametitle{The project}
-Developing materials and tools for teaching an introductory CSci class using a new programming language Clojure.
+Developing materials and tools for teaching an introductory CSci class using a new programming language called Clojure.
 
 Clojure: appeared in 2007, is similar to the current language used in UMM introductory class, but provides additional benefits 
-(support for execution on multiple processors, a wide community developing libraries, and used in industry). 
+(support for execution on multiple processors, a wide community developing libraries, and used in industry)
 
 Past work: 
 \begin{itemize}
@@ -72,10 +73,10 @@ Past work:
 \begin{frame}[fragile]
 \frametitle{Learning goals of an introductory CSci class}
 \begin{itemize}
-\item Present programming as a structured activity.
-\item Develop good programming practices.
-\item Introduce successful techniques: testing, incremental development, refactoring, commenting. 
-\item Help students develop successful team-work strategies. 
+\item Present programming as a structured activity
+\item Develop good programming practices
+\item Introduce successful techniques: testing, incremental development, refactoring, commenting 
+\item Help students develop successful team-work strategies
 \end{itemize}
 \end{frame}
 
@@ -89,21 +90,21 @@ from "Structure and Interpretation of Computer Programs" by Abelson and Sussman
 \begin{frame}[fragile]
 \frametitle{Elements of an introductory CSci class}
 \begin{itemize}
-\item A programming language. 
-\item A text editor.
-\item Tools for testing, managing program code. 
-\item Help in figuring out what went wrong.
-\item Challenging problems that students are interested in.
+\item A programming language
+\item A text editor
+\item Tools for testing, managing program code
+\item Help in figuring out what went wrong
+\item Challenging problems that students are interested in
 \end{itemize}
 \end{frame}
 
 \begin{frame}[fragile]
 \frametitle{Current elements for the Clojure-based class}
 \begin{itemize}
-\item A programming language: Clojure. 
-\item A text editor: LightTable.
+\item A programming language: Clojure
+\item A text editor: LightTable
 \item Tools for testing, managing program code: testing library {\tt expectations}
-\item Help in figuring out what went wrong: Clojure error messages (need work!)
+\item Help in figuring out what went wrong: Clojure error messages (work-in-progress)
 \item Challenging problems that students are interested in: graphical system (work-in-progress by Paul Schliep and Max Magnuson)
 \end{itemize}
 \emcomment{This is a lot of text, need to format, simplify; mention the starting state of the project}
@@ -151,13 +152,22 @@ from "Structure and Interpretation of Computer Programs" by Abelson and Sussman
 \item flexible
 \item scalable
 \end{itemize}
-\item {\tt preobj} renamed to {\tt msg-info-obj}
+\item {\tt preobj} renamed to {\tt message-info-object}
 \end{itemize}	
 \end{frame}
 
 \begin{frame}[fragile]
 \frametitle{Test, refactor, test}
-		
+\begin{itemize}
+\item Consistently rerunning tests makes it easy for us to see if new code suddenly breaks.
+\item Whenever we change anything in the code
+\begin{itemize}
+\item renaming function names
+\item moving around code pieces
+\item adding functions
+\end{itemize}
+we must rerun our tests (by clicking save).
+\end{itemize}		
 \end{frame}
 
 \begin{frame}[fragile]
@@ -165,7 +175,7 @@ from "Structure and Interpretation of Computer Programs" by Abelson and Sussman
 		
 \end{frame}
 
-\section{Modifying a text editor (in the text editor)}
+\section{Modifying a text editor}
 
 \begin{frame}[fragile]
 \frametitle{Goal: integrating our software into LightTable}
