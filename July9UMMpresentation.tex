@@ -33,25 +33,17 @@
 \newcommand{\clocode}[1]{{\texttt {#1}}}
 
 \begin{document}
+\author{Henry Fellows, Aaron Lemmon, Emma Sax 
+\\ {\small Supported by: HHMI, MAP}
+\\ Advisor: Elena Machkasova}
 \title{Writing good software for teaching how to write good software}
 \date{July 9, 2014}
 
 \begin{frame}
 \frametitle{HHMI lab meeting, July 9, 2014}
-\emcomment{format better!}
 
-{\centering
-HHMI lab meeting, July 9, 2014 \par
-}
-{\centering
-Henry Fellows, Aaron Lemmon, Emma Sax \par
-}
-{\centering 
-(supported by HHMI and UMM MAP grants)\par
-}
-{\centering
-Advisor: Elena Machkasova \par
-}
+\maketitle
+
 \end{frame}
 
 \begin{frame}[fragile]
@@ -165,7 +157,7 @@ from "Structure and Interpretation of Computer Programs" by Abelson and Sussman
 \begin{frame}[fragile]
 \frametitle{Test, refactor, test}
 \begin{itemize}
-\item Consistently rerunning tests makes it easy for us to see if new code suddenly breaks.
+\item Consistently \emcomment{or constantly?} rerunning tests makes it easy for us to see if new code suddenly breaks.
 \item Whenever we change anything in the code
 \begin{itemize}
 \item renaming function names
@@ -198,7 +190,7 @@ we must rerun our tests (by clicking save).
 	- Robert Munroe.
 	\end{center}
 \end{frame}
-ev
+
 \begin{frame}
 \frametitle{What actually is code?}
 	\begin{itemize}
@@ -210,7 +202,7 @@ ev
 
 \begin{frame}
 \frametitle{The environment we're working in}
-	The nature of programming languages makes it easy to create a environment with powerful tools for writing code.
+	The nature of programming languages makes it easy to create an environment with powerful tools for writing code.
 	{\em
 	\begin{itemize}
 	\item Grammar checking systems.
@@ -229,5 +221,6 @@ ev
 	\item Programs are made of code.
 	\item Code is just text.
 	\item We can edit code in a text editor.
+	\end{itemize}
 \end{frame} 
 \end{document} 
