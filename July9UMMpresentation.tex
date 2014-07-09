@@ -76,10 +76,11 @@ Past work:
 \begin{frame}[fragile]
 \frametitle{Intro CSci class: learning goals}
 \begin{itemize}
-\item Present programming as a structured activity
+\item Use CSci approaches to problem solving (such as algorithms, abstraction)
+\item Present algorithms development as a structured activity
 \item Develop good programming practices
-\item Introduce successful techniques: testing, incremental development, refactoring, commenting 
-\item Help students develop successful team-work strategies
+\item Introduce successful techniques: testing, incremental development, commenting 
+\item Help students develop effective communication and  team-work strategies
 \end{itemize}
 \end{frame}
 
@@ -107,7 +108,19 @@ Past work:
 \item A programming language: Clojure
 \item A text editor: LightTable
 \item Tools for testing, managing program code: testing library {\tt expectations}
-\item Help in figuring out what went wrong: Clojure error messages (work-in-progress)
+\item Help in figuring out what went wrong: Clojure error messages 
+\item Challenging problems that students are interested in: graphical system (work-in-progress by Paul Schliep and Max Magnuson)
+\end{itemize}
+%\emcomment{This is a lot of text, need to format, simplify; mention the starting state of the project}
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Clojure-based intro class}
+\begin{itemize}
+\item A programming language: Clojure
+\item {\em A text editor: LightTable}
+\item Tools for testing, managing program code: testing library {\tt expectations}
+\item {\em Help in figuring out what went wrong: Clojure error messages}
 \item Challenging problems that students are interested in: graphical system (work-in-progress by Paul Schliep and Max Magnuson)
 \end{itemize}
 %\emcomment{This is a lot of text, need to format, simplify; mention the starting state of the project}
@@ -173,17 +186,6 @@ we must rerun our tests (by clicking save).
 \end{itemize}		
 \end{frame}
 
-\begin{frame}[fragile]
-\frametitle{What we have accomplished}
-%%Nothing below has periods because there is no subject in any of the sentences
-%%\emcomment{this should refer only to what you guys have done}
-\begin{itemize}
-\item Rewrote original Clojure functions for strings (and a few others) so that they have an initial "safety net" for students (and tested the rewritten functions)
-\item Tested the methods for handling errors and showing them 
-\item Developed a plugin in LightTable for LightTable (work-in-progress, to be discussed)
-\end{itemize}
-\end{frame}
-
 \section{Modifying a text editor}
 
 \begin{frame}
@@ -228,4 +230,33 @@ we must rerun our tests (by clicking save).
 	\item We can edit code in a text editor.
 	\end{itemize}
 \end{frame} 
+
+\section{Conclusions and future work}
+
+\begin{frame}[fragile]
+\frametitle{What we have accomplished}
+%%Nothing below has periods because there is no subject in any of the sentences
+%%\emcomment{this should refer only to what you guys have done}
+\begin{itemize}
+\item Rewrote original Clojure functions for strings (and a few others) so that they have an initial "safety net" for students (and tested the rewritten functions)
+\item Tested the methods for handling errors and showing them 
+\item Steps towards developing a plugin in LightTable for LightTable
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Future work}
+\begin{itemize}
+\item More work on making error messages beginner-friendly
+\item Providing hints on why an error happened
+\item Integrating error messages into LightTable
+\item Usability testing
+\end{itemize}
+Clojure-based introductory course: Fall 2015. 
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{That's all, folks}
+{\bf\large Questions?}
+\end{frame}
 \end{document} 
